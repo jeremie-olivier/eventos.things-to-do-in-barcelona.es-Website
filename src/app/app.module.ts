@@ -73,6 +73,10 @@ import { SharedModule } from './shared/shared.module';
 // hmr
 import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
 
+// Datatable
+import { NgxDatatableModule } from '@swimlane/ngx-datatable';
+
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -115,6 +119,9 @@ import { removeNgStyles, createNewHosts } from '@angularclass/hmr';
     // Sub modules
     LayoutModule,
     SharedModule,
+
+    // Datatable
+    NgxDatatableModule,
   ],
   declarations: [
     AppComponent,

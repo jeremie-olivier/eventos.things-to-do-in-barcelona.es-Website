@@ -1,9 +1,26 @@
  <div class="container-fluid no-breadcrumbs page-dashboard">
 
-  <div class="box box-default">
-    <div class="box-body">
-    </div>
-  </div>
+  <!-- <div class="box box-default">
+    <div class="box-body"> -->
+      <ngx-datatable
+        style="height:600px;"
+        class="material"
+        [rows]="rows"
+        [columns]="columns"
+        columnMode="force"
+        [headerHeight]="50"
+        [footerHeight]="0"
+        [rowHeight]="50"
+        [loadingIndicator]="loading"
+        [selectionType]="selectionType"
+        [scrollbarV]="true"
+        [scrollbarH]="true"
+        [selected]="selected">
+      </ngx-datatable>
+      <!-- (select)=''
+      (active)='' -->
+    <!-- </div>
+  </div> -->
 
   <div class="row">
 
